@@ -23,7 +23,7 @@ Table Of Contents:
 :root {
 	--primary: #1c262f;
 	--primary-light: #212d37;
-	--secondary: #0ee951;
+	--secondary: #00ffea;
 	--tertiary: #00dabf;
 	--gradient: linear-gradient(to right, #0ee951, #00dabf);
 }
@@ -107,8 +107,8 @@ li {
 		linear,
 		left top,
 		left bottom,
-		from(#0ee951),
-		to(#00dabf)
+		from(#00ffea),
+		to(#00ffea)
 	);
 	background-clip: text;
 	-webkit-background-clip: text;
@@ -265,8 +265,8 @@ li {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-}
 
+}
 .para {
   	width: 50%;
 }
@@ -469,6 +469,7 @@ li {
 .slider-1 .avatar {
 	width: 70px;
 	height: 70px;
+	resize:cover;
 	border-radius: 50%;
 }
 
