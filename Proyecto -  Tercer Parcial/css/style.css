@@ -1,24 +1,23 @@
 /* Description: Master CSS file */
 
 /*****************************************
-Table Of Contents:
-- General Styles
-- Navigation
+	Ídice
+- Estilos Generales
+- Menu
 - Home
-- Information
-- Button
-- Services
-- Plans
-- Testimonials
-- Newsletter
-- Back To Top Button
-- Extra Pages
+- Informacion
+- Botón
+- Servicios
+- Planes
+- Testimonios
+- Estilos "Contáctanos"
+- Botón de Desplazamiento
+- Paginas Extra(Tarjetas)
 - Media Queries
 ******************************************/
 
-
 /**************************/
-/*     General Styles     */
+/*    Estilos Generales   */
 /**************************/
 :root {
 	--primary: #1c262f;
@@ -62,7 +61,7 @@ li {
   	list-style-type: none;
 }
 
-/* Section Background */
+/* Fondo */
 .home,
 .about,
 .services,
@@ -93,7 +92,7 @@ li {
   	background-color: black;
 }
 
-/* Gradient Border And Background On Icons */
+/* Borde e iconos del fondo/Background */
 .home_text,
 .home .fas,
 .plans .far,
@@ -126,9 +125,9 @@ li {
 }
 
 
-/**********************/
-/*     Navigation     */
-/**********************/
+/*************************/
+/*         Menu         */
+/***********************/
 .navbar {
 	font-weight: 500;
 	font-size: 0.875rem;
@@ -157,7 +156,7 @@ li {
 
 .offcanvas-collapse {
 	position: fixed;
-	top: 2.75rem; /* adjusts the height between the top of the page and the offcanvas menu */
+	top: 2.75rem; /* Se ajusta la altura entre la parte superior de la página y el menú fuera del lienzo */
 	bottom: 0;
 	left: 100%;
 	width: 100%;
@@ -227,7 +226,7 @@ li {
 		linear,
 		left top,
 		left bottom,
-		from(#0ee951),
+		from(#00ffea),
 		to(#00dabf)
 	);
 	background-clip: text;
@@ -277,7 +276,7 @@ li {
 
 
 /***********************/
-/*     Information     */
+/*     Información     */
 /***********************/
 .information .container-fluid .row div:first-child {
   	background-color: var(--primary);
@@ -293,7 +292,7 @@ li {
 
 
 /******************/
-/*     Button     */
+/*     Botón     */
 /******************/
 .btn {
 	color: white;
@@ -332,7 +331,7 @@ li {
 	background-image: var(--gradient);
 }
 
-/* Other Pages Button */
+/* Botones para otras paginas */
 .btn-tertiary {
 	color: black;
 	border-radius: 0;
@@ -355,7 +354,7 @@ li {
 
 
 /********************/
-/*     Services     */
+/*     Servicios     */
 /********************/
 .services .card {
 	padding: 20px;
@@ -369,12 +368,12 @@ li {
 	border-image-slice: 1;
 	border-width: 2px;
 	border-image-source: var(--gradient);
-	box-shadow: 5px 5px 0px 0px #0ee951;
+	box-shadow: 5px 5px 0px 0px #00ffea;
 }
 
 
 /*****************/
-/*     Plans     */
+/*     Planes     */
 /*****************/
 .plans .card {
 	padding: 20px;
@@ -383,7 +382,7 @@ li {
 
 
 /************************/
-/*     Testimonials     */
+/*     Testimonios     */
 /************************/
 .slider-1 {
 	padding-top: 8.25rem;
@@ -422,7 +421,6 @@ li {
 
 .slider-1 .swiper-button-prev:focus,
 .slider-1 .swiper-button-next:focus {
-	/* even if you can't see it chrome you can see it on mobile device */
 	outline: none;
 }
 
@@ -473,9 +471,9 @@ li {
 	border-radius: 50%;
 }
 
-/* Dropdown Menu */
+/* Menu Desplegable */
 .navbar .dropdown .dropdown-menu {
-  	animation: fadeDropdown 0.2s; /* required for the fade animation */
+  	animation: fadeDropdown 0.2s; /* Animación de Desvanecimiento en el Drop */
 }
 
 @-webkit-keyframes fadeDropdown {
@@ -499,9 +497,9 @@ li {
 }
 
 
-/**********************/
-/*     Newsletter     */
-/**********************/
+/*************************/
+/* Estilos "Contáctanos" */
+/*************************/
 .form-control-input,
 .form-control-textarea {
 	width: 100%;
@@ -516,7 +514,7 @@ li {
 
 
 /******************************/
-/*     Back To Top Button     */
+/*   Botón de Desplazamiento  */
 /******************************/
 #myBtn {
 	z-index: 99;
@@ -544,9 +542,9 @@ li {
 }
 
 
-/***********************/
-/*     Extra Pages     */
-/***********************/
+/****************************/
+/* Paginas Extra(Tarjetas) */
+/***************************/
 .ex-header {
 	padding-top: 8.5rem;
 	padding-bottom: 4rem;
@@ -633,7 +631,7 @@ li {
 		background-size: 22px 34px;
 	}
 
-	/* Navigation */
+	/* Navegación */
 	.navbar {
 		box-shadow: none;
 		transition: all 0.2s;
