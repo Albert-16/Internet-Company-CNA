@@ -10,8 +10,9 @@
 - Testimonios
 - Estilos "Contáctanos"
 - Botón de Desplazamiento
-- Paginas Extra(Tarjetas)
+- Paginas Extra
 - Media Queries
+- Tarjetas Pagina Detalles
 ******************************************/
 
 /**************************/
@@ -25,12 +26,7 @@
 	--gradient: linear-gradient(to right, #0ee951, #00dabf);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+html {
 	font-family: "Poppins", sans-serif;
 }
 
@@ -541,7 +537,7 @@ li {
 
 
 /****************************/
-/* Paginas Extra(Tarjetas) */
+/* Paginas Extra*/
 /***************************/
 .ex-header {
 	padding-top: 8.5rem;
@@ -567,35 +563,6 @@ li {
 	background-color: #f7f9fd;
 }
 
-.ex-cards-1 .card {
-	border: none;
-	background-color: transparent;
-}
-
-.ex-cards-1 .card .fa-stack {
-	width: 2em;
-	font-size: 1.125rem;
-}
-
-.ex-cards-1 .card .fa-stack-2x {
-  	color: var(--secondary);
-}
-
-.ex-cards-1 .card .fa-stack-1x {
-	width: 2em;
-	color: #ffffff;
-	font-weight: 700;
-	line-height: 2.125rem;
-}
-
-.ex-cards-1 .card .list-unstyled .flex-grow-1 {
-  	margin-left: 2.25rem;
-}
-
-.ex-cards-1 .card .list-unstyled .flex-grow-1 h5 {
-	margin-top: 0.125rem;
-	margin-bottom: 0.5rem;
-}
 
 
 /*************************/
@@ -715,4 +682,19 @@ li {
 		width: 22px;
 		background-size: 22px 34px;
 	}
+}
+/****************************/
+/* Tarjetas Pagina Detalles */
+/****************************/
+.card_details{
+	background-color: var(--primary-light);
+	color:#f7f9fd;
+	border-image-source: var(--gradient);
+}
+.card_details:hover {
+	box-shadow: none;
+	border-radius: 0;
+	padding: 10px 30px;
+	transform: translate(5px, 5px);
+	box-shadow: 5px 5px 0px 0px #00ffea;
 }

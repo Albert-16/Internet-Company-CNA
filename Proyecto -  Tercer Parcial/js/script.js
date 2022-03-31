@@ -1,12 +1,9 @@
-/* DESCRIPTION: CUSTOM JS FILE */
-
-/* NAVIGATION*/
-// COLLAPSE THE NAVBAR BY ADDING THE TOP-NAV-COLLAPSE CLASS
+/* Navegacios*/
 window.onscroll = function () {
 	scrollFunction();
-	scrollFunctionBTT(); // back to top button
+	scrollFunctionBTT(); // Botón para volver al inicio
 };
-
+// FUNCIÓN QUE CONTRAE LA BARRA DE NAVBAR AÑADIENDO LA CLASE TOP-NAV-COLLAPSE
 function scrollFunction() {
 	let intViewportWidth = window.innerWidth;
 	if (
@@ -22,7 +19,7 @@ function scrollFunction() {
 	}
 }
 
-// NAVBAR ON MOBILE
+// NAVBAR PARA MOVILES
 let elements = document.querySelectorAll(".nav-link:not(.dropdown-toggle)");
 
 for (let i = 0; i < elements.length; i++) {
@@ -35,7 +32,7 @@ document.querySelector(".navbar-toggler").addEventListener("click", () => {
   document.querySelector(".offcanvas-collapse").classList.toggle("open");
 });
 
-// HOVER ON DESKTOP
+// HOVER EN ESCRITORIOS
 function toggleDropdown(e) {
     const _d = e.target.closest(".dropdown");
     let _m = document.querySelector(".dropdown-menu", _d);
@@ -52,7 +49,7 @@ function toggleDropdown(e) {
     );
 }
 
-// ON HOVER
+// HOVER
 const dropdownCheck = document.querySelector(".dropdown");
 
 if (dropdownCheck !== null) {
@@ -63,7 +60,7 @@ if (dropdownCheck !== null) {
         .querySelector(".dropdown")
         .addEventListener("mouseover", toggleDropdown);
 
-    // ON CLICK
+    // CLICK
     document.querySelector(".dropdown").addEventListener("click", (e) => {
         const _d = e.target.closest(".dropdown");
         let _m = document.querySelector(".dropdown-menu", _d);
@@ -77,7 +74,7 @@ if (dropdownCheck !== null) {
     });
 }
 
-/* CARD SLIDER - SWIPER */
+/* CARD SLIDER - SWIPER*/
 var cardSlider = new Swiper(".card-slider", {
     autoplay: {
         delay: 4000,
@@ -91,11 +88,11 @@ var cardSlider = new Swiper(".card-slider", {
     slidesPerView: 3,
     spaceBetween: 70,
     breakpoints: {
-        // when window is <= 767px
+        // window <= 767px
         767: {
         slidesPerView: 1,
         },
-        // when window is <= 991px
+        // window <= 991px
         991: {
         slidesPerView: 2,
         spaceBetween: 40,
@@ -115,16 +112,17 @@ function scrollFunctionBTT() {
         myButton.style.display = "none";
     }
 }
-
-// WHEN THE USER CLICKS ON THE BUTTON, SCROLL TO THE TOP OF THE DOCUMENT
+/* BOTÓN VOLVER ARRIBA */
+// OBTENER EL BOTÓN
+// CUANDO EL USUARIO HAGA CLIC EN EL BOTÓN, SE DESPLAZARA A LA PARTE SUPERIOR
 function topFunction() {
-    document.body.scrollTop = 0; // for Safari
-    document.documentElement.scrollTop = 0; // for Chrome, Firefox, IE and Opera
+    document.body.scrollTop = 0; // Para Safari
+    document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
 }
 
-// AOS ANIMATION ON SCROLL
+// AOS ANIMACIÓN DE DESPLAZAMIENTO
 AOS.init({
     duration: 1000,
     easing: "ease",
-    once: true, // whether animation should happen only once - while scrolling down
+    once: true, // Indicamos que la funcion solo debe hacerse una vez al desplazaese hacia abajo
 });
