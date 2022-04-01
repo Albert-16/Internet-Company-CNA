@@ -25,7 +25,9 @@
 	--tertiary: #00dabf;
 	--gradient: linear-gradient(to right, #0ee951, #00dabf);
 }
-
+.pHome{
+	font-size: 15px;
+}
 html {
 	font-family: "Poppins", sans-serif;
 }
@@ -259,6 +261,9 @@ li {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 
+}
+.home p{
+	font-size: 25px;
 }
 .para {
   	width: 50%;

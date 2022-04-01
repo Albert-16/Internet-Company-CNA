@@ -100,11 +100,11 @@ var cardSlider = new Swiper(".card-slider", {
     },
 });
 
-/* BACK TO TOP BUTTON */
-// GET THE BUTTON
+/*BOTÓN VOLVER ARRIBA */
+//Para el Boton
 myButton = document.getElementById("myBtn");
 
-// WHEN THE USER SCROLLS DOWN 20PX FROM THE TOP OF THE DOCUMENT, SHOW THE BUTTON
+// CUANDO EL USUARIO SE DESPLAZA HACIA ABAJO 20PX DESDE LA PARTE SUPERIOR DEL DOCUMENTO, MUESTRA EL BOTÓN
 function scrollFunctionBTT() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         myButton.style.display = "block";
