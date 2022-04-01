@@ -23,7 +23,7 @@
 	--primary-light: #212d37;
 	--secondary: #00ffea;
 	--tertiary: #00dabf;
-	--gradient: linear-gradient(to right, #0ee951, #00dabf);
+	--gradient: linear-gradient(to right, #00ffea, #00dabf);
 }
 .pHome{
 	font-size: 15px;
@@ -102,8 +102,8 @@ li {
 		linear,
 		left top,
 		left bottom,
-		from(#00ffea),
-		to(#00ffea)
+		from(var(--secondary)),
+		to(var(--tertiary))
 	);
 	background-clip: text;
 	-webkit-background-clip: text;
