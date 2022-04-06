@@ -126,8 +126,3 @@ AOS.init({
     easing: "ease",
     once: true, // Indicamos que la funcion solo debe hacerse una vez al desplazaese hacia abajo
 });
-//ALERTA
-function alertaForm() {
-    alert("Mensaje enviado con éxito, pronto le responderemos...");
-    document.getElementById('myform').reset();
-}
